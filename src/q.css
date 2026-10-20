@@ -1,0 +1,126 @@
+.q .p-cursor {
+  display: none;
+}
+
+.q,
+.q a {
+  cursor: auto;
+}
+
+.q a {
+  cursor: pointer;
+}
+
+.q-gl {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.q-load {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.q-load.is-done {
+  opacity: 0;
+}
+
+.q-walk {
+  height: 1100vh;
+}
+
+.q-ui {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.q-intro {
+  position: absolute;
+  left: var(--g);
+  right: var(--g);
+  bottom: var(--g);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: opacity 0.6s var(--e);
+}
+
+.q-title {
+  font-family: var(--ser);
+  font-weight: 300;
+  font-size: clamp(44px, 6vw, 112px);
+  line-height: 0.94;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+/* a casa diante da qual a câmera parou */
+.q-house {
+  position: absolute;
+  left: var(--g);
+  bottom: var(--g);
+  display: grid;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s var(--e), transform 0.9s var(--e);
+}
+
+.q-house.is-on {
+  opacity: 1;
+  transform: none;
+}
+
+.q-house__i {
+  font-size: 12px;
+  margin: 0;
+  color: var(--mute);
+  font-variant-numeric: tabular-nums;
+}
+
+.q-house__name {
+  font-family: var(--ser);
+  font-weight: 300;
+  font-size: clamp(56px, 7vw, 132px);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+  margin: 0;
+  min-height: 0.95em;
+}
+
+.q-house__meta {
+  font-size: 14px;
+  margin: 0;
+  color: var(--mute);
+  min-height: 1.2em;
+}
+
+.q-grupo {
+  position: relative;
+}
+
+.q-body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--mute);
+  max-width: 44ch;
+  margin: 50px 0 0 auto;
+}
+
+main > section:not(.q-walk),
+.p-f {
+  position: relative;
+  z-index: 1;
+}
