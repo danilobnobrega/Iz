@@ -22,6 +22,7 @@ export default defineConfig({
         fenda: resolve(__dirname, 'fenda.html'),
         m: resolve(__dirname, 'm.html'),
         n: resolve(__dirname, 'n.html'),
+        o: resolve(__dirname, 'o.html'),
       },
     },
   },

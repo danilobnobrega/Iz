@@ -23,3 +23,4 @@ npm run dev   # http://localhost:5190
 | `/fenda.html` | L — família da fenda vertical |
 | `/m.html` | M — títulos em WebGL (SDF) e fotos que voam |
 | `/n.html` | N — marca-janela com corredor 3D iluminado pelo cursor |
+| `/o.html` | O — o restaurante abrindo: as luzes da foto acendem, o cursor ilumina |
