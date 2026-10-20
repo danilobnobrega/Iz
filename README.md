@@ -29,3 +29,4 @@ npm run dev   # http://localhost:5190
 | `/r.html` | R — prensa: o grupo impresso em risografia, duas tintas por casa, retícula, registro e passada do rolo |
 | `/s.html` | S — poeira: partículas na GPU formam a marca, as fotos em relevo e as frases |
 | `/t.html` | T — serviço: ritmo de cozinha, história em batidas, cortes de faca, marca que se corta no rodapé |
+| `/u.html` | U — foco: cada foto tem profundidade real (Depth Anything); o foco segue o olho como um autofoco, a câmera anda com o scroll, o texto só fica nítido na linha de leitura |
