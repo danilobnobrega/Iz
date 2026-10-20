@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Grupo Íz — proposta P</title>
+    <style>
+      html { background: #ece5d9; }
+      body.is-loading .p-h, body.is-loading .p-hero__t { visibility: hidden; }
+    </style>
+  </head>
+  <body class="p is-loading">
+    <canvas class="gl p-gl-hero" aria-hidden="true"></canvas>
+    <canvas class="p-gl-media" aria-hidden="true"></canvas>
+    <div class="p-grain" aria-hidden="true"></div>
+    <div class="p-cursor" aria-hidden="true"><span class="p-cursor__dot"></span><span class="p-cursor__label"></span></div>
+    <div class="p-trail" aria-hidden="true"></div>
+
+    <header class="p-h">
+      <a class="p-h__mark" href="#" data-top aria-label="Grupo Íz, início">Íz</a>
+      <nav class="p-h__nav">
+        <a class="p-roll" href="#grupo" data-go><span>O grupo</span><span>O grupo</span></a>
+        <a class="p-roll" href="#casas" data-go><span>Casas</span><span>Casas</span></a>
+        <a class="p-roll" href="#trabalhe" data-go><span>Trabalhe conosco</span><span>Trabalhe conosco</span></a>
+      </nav>
+      <a class="p-btn" href="#casas" data-go data-magnet><span class="p-btn__t">Reservar</span><span class="p-btn__a" aria-hidden="true">→</span></a>
+    </header>
+
+    <main>
+      <!-- 1. abertura: a marca como janela -->
+      <section class="p-hero" id="hero">
+        <div class="p-stick">
+          <div class="p-hero__t">
+            <h1 class="p-hero__title" data-scr>Grupo de gastronomia</h1>
+            <p class="p-small" data-scr>Goiânia · desde 2015</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. manifesto: o peso da letra acompanha a leitura -->
+      <section class="p-mani">
+        <div class="p-stick p-mani__in">
+          <p class="p-mani__t" data-weight>Alta gastronomia com <em>alma regional.</em> Cuidado, <em>não pompa.</em> A base é linguagem, <em>não regra.</em> Local, sem ser óbvio. Nada de <em>acomodação.</em></p>
+        </div>
+      </section>
+
+      <!-- 3. o grupo: palavras soltam fotos atrás do cursor -->
+      <section class="p-sec p-grupo" id="grupo">
+        <p class="p-k" data-r>O grupo</p>
+        <p class="p-lead" data-lines>
+          Ian Baiocchi e Domingos Ávila se conheceram na academia de karatê da família. Ian cozinhou no
+          <span class="p-hot" data-trail="/img/ian_neo.webp,/img/caviar.webp,/img/iz_rest.webp">D.O.M.</span> e no Maní, em São Paulo, e no
+          <span class="p-hot" data-trail="/img/gra1.webp,/img/trattoria.webp,/img/nip_pizza.webp">El Celler de Can Roca</span> e no Mugaritz, na Espanha. Voltou para
+          <span class="p-hot" data-trail="/img/gra2.webp,/img/iz_9.webp,/img/nip_fachada.webp,/img/iz_unnamed.webp">Goiânia</span>, e em 2016 Domingos virou
+          <span class="p-hot" data-trail="/img/socios.webp,/img/ian_chef.webp">sócio</span>.
+        </p>
+      </section>
+
+      <!-- 4. casas: carrossel WebGL que se arrasta -->
+      <section class="p-casas" id="casas">
+        <div class="p-stick p-casas__in">
+          <p class="p-k p-k--light p-casas__k">Casas</p>
+          <div class="p-casas__track" data-cursor="Arraste">
+            <figure data-gl data-slide><img src="/img/iz_unnamed.webp" alt="Íz" /></figure>
+            <figure data-gl data-slide><img src="/img/t1929.webp" alt="1929 Trattoria" /></figure>
+            <figure data-gl data-slide><img src="/img/gra2.webp" alt="Grá" /></figure>
+            <figure data-gl data-slide><img src="/img/nip_pistache.webp" alt="Alata" /></figure>
+            <figure data-gl data-slide><img src="/img/nip_polpetone.webp" alt="Fulles Kitchen" /></figure>
+            <figure data-gl data-slide><img src="/img/iz_9.webp" alt="Íz Hotel" /></figure>
+            <figure data-gl data-slide><img src="/img/nip_fachada.webp" alt="nip" /></figure>
+          </div>
+          <div class="p-casas__names">
+            <p class="p-name" data-meta="Contemporânea · desde 2015">Íz</p>
+            <p class="p-name" data-meta="Italiana · o ano da avó">1929</p>
+            <p class="p-name" data-meta="Bistrô francês · 192 metros">Grá</p>
+            <p class="p-name" data-meta="Sorvete artesanal">Alata</p>
+            <p class="p-name" data-meta="Cozinha na lenha">Fulles</p>
+            <p class="p-name" data-meta="Restaurant with rooms">Hotel</p>
+            <p class="p-name" data-meta="Not in Napoli · Rua 1130">nip</p>
+          </div>
+          <p class="p-casas__meta"></p>
+        </div>
+      </section>
+
+      <!-- 5. princípios: cartas empilhadas -->
+      <section class="p-stack">
+        <article class="p-card" style="--bg:#e4dccd"><span class="p-card__n">01</span><p class="p-card__t">Cuidado, <em>não pompa.</em></p><p class="p-card__d">Reunião com o salão todo dia antes de abrir. Serviço leve, nunca descuidado.</p><figure class="p-card__img"><img src="/img/gra1.webp" alt="" /></figure></article>
+        <article class="p-card" style="--bg:#d9cdb9"><span class="p-card__n">02</span><p class="p-card__t">A base é linguagem, <em>não regra.</em></p><p class="p-card__d">No nip, a Margherita é DOG: denominação de origem goiana.</p><figure class="p-card__img"><img src="/img/nip_pizza.webp" alt="" /></figure></article>
+        <article class="p-card" style="--bg:#5e1f19;--fg:#f3ebde"><span class="p-card__n">03</span><p class="p-card__t">Local, <em>sem ser óbvio.</em></p><p class="p-card__d">Baru, cajuzinho do cerrado, baunilha do cerrado, jabuticaba.</p><figure class="p-card__img"><img src="/img/caviar.webp" alt="" /></figure></article>
+        <article class="p-card" style="--bg:#1a1612;--fg:#f3ebde"><span class="p-card__n">04</span><p class="p-card__t">Nada de <em>acomodação.</em></p><p class="p-card__d">Padaria, açougue e confeitaria próprios abastecem as casas.</p><figure class="p-card__img"><img src="/img/iz_rest.webp" alt="" /></figure></article>
+      </section>
+
+      <!-- 6. bastidores: as letras espalhadas se montam -->
+      <section class="p-bts">
+        <div class="p-stick p-bts__in">
+          <figure class="p-bts__img"><img src="/img/ian_chef.webp" alt="Ian Baiocchi na cozinha" /></figure>
+          <p class="p-bts__t" data-assemble>O que ninguém vê do salão.</p>
+          <div class="p-nums">
+            <div><span class="p-odo" data-odo="445"></span><p class="p-small">pessoas</p></div>
+            <div><span class="p-odo" data-odo="50"></span><p class="p-small">mil clientes por mês</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. imprensa: a faixa acelera com o scroll -->
+      <section class="p-press">
+        <div class="p-marq"><div class="p-marq__in">
+          <span>12º entre os 100 melhores restaurantes do Brasil <i>— Exame</i></span>
+          <span>Melhor restaurante de Goiânia <i>— Curta Mais 2026</i></span>
+          <span>Como dois jovens criaram um império gastronômico <i>— Forbes</i></span>
+        </div></div>
+      </section>
+
+      <!-- 8. trabalhe -->
+      <section class="p-sec p-trab" id="trabalhe">
+        <p class="p-k" data-r>Trabalhe conosco</p>
+        <p class="p-statement" data-lines>445 hoje. <em>520 em 2026.</em></p>
+        <a class="p-btn p-btn--l" href="#" data-magnet><span class="p-btn__t">Quero trabalhar no Íz</span><span class="p-btn__a" aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <!-- 9. rodapé: as letras engordam perto do cursor -->
+    <footer class="p-f">
+      <div class="p-f__mark" aria-label="Íz"><span>Í</span><span>z</span></div>
+      <div class="p-f__row">
+        <a class="p-roll" href="#" data-top><span>Voltar ao começo</span><span>Voltar ao começo</span></a>
+        <span>Rua 1130, Setor Marista · Goiânia</span>
+        <span>Proposta não oficial, por Danilo</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/p.ts"></script>
+  </body>
+</html>

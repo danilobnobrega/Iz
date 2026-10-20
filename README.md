@@ -24,3 +24,4 @@ npm run dev   # http://localhost:5190
 | `/m.html` | M — títulos em WebGL (SDF) e fotos que voam |
 | `/n.html` | N — marca-janela com corredor 3D iluminado pelo cursor |
 | `/o.html` | O — o restaurante abrindo: as luzes da foto acendem, o cursor ilumina |
+| `/p.html` | P — uma animação diferente por seção, mesma família |
