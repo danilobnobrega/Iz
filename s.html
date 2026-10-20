@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Grupo Íz — proposta S (poeira)</title>
+    <style>
+      html { background: #0e0c0a; }
+      body.is-loading main, body.is-loading .s-h, body.is-loading .s-house { visibility: hidden; }
+    </style>
+  </head>
+  <body class="s is-loading">
+    <canvas class="s-gl" aria-hidden="true"></canvas>
+    <div class="s-load" aria-hidden="true"><span class="s-load__n">000</span></div>
+    <div class="s-cur" aria-hidden="true"></div>
+
+    <header class="s-h">
+      <a class="s-h__mark" href="#" data-top aria-label="Grupo Íz, início">Íz</a>
+      <nav class="s-h__nav">
+        <a class="s-roll" href="#grupo" data-go><span data-t="O grupo">O grupo</span></a>
+        <a class="s-roll" href="#casas" data-go><span data-t="Casas">Casas</span></a>
+        <a class="s-roll" href="#trabalhe" data-go><span data-t="Trabalhe conosco">Trabalhe conosco</span></a>
+        <button class="s-sound" type="button" aria-pressed="false" aria-label="Ligar som"><i></i><i></i><i></i><i></i></button>
+      </nav>
+    </header>
+
+    <!-- a casa diante da câmera -->
+    <div class="s-house" aria-live="polite">
+      <p class="s-house__n"><span class="s-house__i">01</span><span class="s-house__bar"><i></i></span><span>07</span></p>
+      <p class="s-house__name"></p>
+      <p class="s-house__meta"></p>
+      <a class="s-link" href="#"><span>Conhecer a casa</span><i aria-hidden="true">→</i></a>
+    </div>
+
+    <main>
+      <section class="s-hero" data-shape>
+        <h1 class="s-title" data-chars>Alta gastronomia <em>com alma regional.</em></h1>
+        <p class="s-hint"><i></i>Role, ou segure o clique</p>
+      </section>
+
+      <section class="s-grupo" id="grupo" data-shape>
+        <div class="s-col">
+          <p class="s-k" data-fade>O grupo</p>
+          <p class="s-statement" data-lines>Dois amigos de infância. <em>Um cozinheiro que voltou pra casa.</em></p>
+          <p class="s-body" data-fade>Ian Baiocchi e Domingos Ávila se conheceram na academia de karatê da família. Ian cozinhou no D.O.M., no Maní, no El Celler de Can Roca e no Mugaritz. Voltou para Goiânia, abriu o Íz em 2015, e em 2016 Domingos virou sócio.</p>
+        </div>
+      </section>
+
+      <div id="casas">
+        <section class="s-casa" data-shape data-house="0"></section>
+        <section class="s-casa" data-shape data-house="1"></section>
+        <section class="s-casa" data-shape data-house="2"></section>
+        <section class="s-casa" data-shape data-house="3"></section>
+        <section class="s-casa" data-shape data-house="4"></section>
+        <section class="s-casa" data-shape data-house="5"></section>
+        <section class="s-casa" data-shape data-house="6"></section>
+      </div>
+
+      <section class="s-guia" data-shape><h2 class="s-sr">Cuidado, não pompa.</h2></section>
+      <section class="s-guia" data-shape><h2 class="s-sr">A base é linguagem, não regra.</h2></section>
+      <section class="s-guia" data-shape><h2 class="s-sr">Local, sem ser óbvio.</h2></section>
+      <section class="s-guia" data-shape><h2 class="s-sr">Nada de acomodação.</h2></section>
+
+      <section class="s-trab" id="trabalhe" data-shape>
+        <div class="s-col s-col--c">
+          <p class="s-k" data-fade>Trabalhe conosco</p>
+          <p class="s-lit" data-lit>Somos 445 pessoas hoje e seremos 520 em 2026. Cozinha, salão, padaria, açougue, confeitaria. Tem lugar pra quem leva o ofício a sério.</p>
+          <a class="s-btn" href="#"><span class="s-btn__f"></span><span class="s-btn__t" data-t="Quero trabalhar no Íz">Quero trabalhar no Íz</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="s-f" data-shape>
+      <div class="s-f__row">
+        <a class="s-roll" href="#" data-top><span data-t="Voltar ao começo">Voltar ao começo</span></a>
+        <span>Rua 1130, Setor Marista · Goiânia</span>
+        <span>Proposta não oficial, por Danilo</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/s.ts"></script>
+  </body>
+</html>

@@ -27,3 +27,5 @@ npm run dev   # http://localhost:5190
 | `/p.html` | P — uma animação diferente por seção, mesma família |
 | `/q.html` | Q — a planta: o Íz como edifício-galeria, a câmera caminha pelas letras |
 | `/r.html` | R — prensa: o grupo impresso em risografia, duas tintas por casa, retícula, registro e passada do rolo |
+| `/s.html` | S — poeira: partículas na GPU formam a marca, as fotos em relevo e as frases |
+| `/t.html` | T — serviço: ritmo de cozinha, história em batidas, cortes de faca, marca que se corta no rodapé |

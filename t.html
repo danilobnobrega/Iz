@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Grupo Íz — proposta T (serviço)</title>
+    <style>
+      html { background: #0c0c0b; }
+    </style>
+  </head>
+  <body class="t is-intro">
+    <!-- abertura: montagem no tempo, depois a facada -->
+    <div class="t-intro" aria-hidden="true">
+      <div class="t-intro__half t-intro__half--a"><div class="t-intro__stage"></div></div>
+      <div class="t-intro__half t-intro__half--b"><div class="t-intro__stage"></div></div>
+      <i class="t-intro__blade"></i>
+    </div>
+
+    <header class="t-h">
+      <a class="t-h__mark" href="#" data-top aria-label="Grupo Íz, início">ÍZ</a>
+      <nav class="t-h__nav">
+        <a href="#historia" data-go>O grupo</a>
+        <a href="#casas" data-go>Casas</a>
+        <a href="#trabalhe" data-go>Trabalhe conosco</a>
+        <button class="t-sound" type="button" aria-pressed="false">Som <b>off</b></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero: a foto fatiada em lâminas -->
+      <section class="t-hero">
+        <div class="t-hero__photo" data-slices="/img/iz_rest.webp"></div>
+        <h1 class="t-hero__t">
+          <span class="t-hero__l">Alta gastronomia</span>
+          <span class="t-hero__l t-hero__l--it">com alma</span>
+          <span class="t-hero__l">regional.</span>
+        </h1>
+      </section>
+
+      <!-- a história em batidas: a rolagem anda por cortes -->
+      <section class="t-beat" id="historia">
+        <div class="t-beat__stick">
+          <div class="t-beat__frame t-beat__frame--a"></div>
+          <div class="t-beat__frame t-beat__frame--b"></div>
+          <i class="t-beat__blade"></i>
+          <div class="t-beat__ticks" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- casas: sete fatias -->
+      <section class="t-casas" id="casas">
+        <div class="t-casas__head">
+          <p class="t-k">As casas</p>
+          <p class="t-casas__lead">Sete cozinhas, <em>uma brigada.</em></p>
+        </div>
+        <div class="t-slices"></div>
+      </section>
+
+      <!-- princípios: cada frase chega cortada e se encaixa -->
+      <section class="t-guia">
+        <p class="t-k">O que nos guia</p>
+        <p class="t-cut" data-cut>Cuidado, não pompa.</p>
+        <p class="t-cut" data-cut>A base é linguagem, não regra.</p>
+        <p class="t-cut" data-cut>Local, sem ser óbvio.</p>
+        <p class="t-cut" data-cut>Nada de acomodação.</p>
+      </section>
+
+      <section class="t-trab" id="trabalhe">
+        <p class="t-k">Trabalhe conosco</p>
+        <p class="t-trab__t">445 na brigada hoje. <em>520 em 2026.</em></p>
+        <a class="t-knife" href="#" data-t="Quero entrar na brigada"><span>Quero entrar na brigada</span></a>
+      </section>
+    </main>
+
+    <!-- rodapé: arraste para cortar -->
+    <footer class="t-f">
+      <div class="t-f__board">
+        <p class="t-f__mark t-f__mark--a" aria-label="Íz">ÍZ</p>
+        <p class="t-f__mark t-f__mark--b" aria-hidden="true">ÍZ</p>
+        <svg class="t-f__line" aria-hidden="true"><line /></svg>
+      </div>
+      <div class="t-f__row">
+        <a href="#" data-top>Voltar ao começo</a>
+        <span>Rua 1130, Setor Marista · Goiânia</span>
+        <span>Proposta não oficial, por Danilo</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/t.ts"></script>
+  </body>
+</html>
