@@ -26,3 +26,4 @@ npm run dev   # http://localhost:5190
 | `/o.html` | O — o restaurante abrindo: as luzes da foto acendem, o cursor ilumina |
 | `/p.html` | P — uma animação diferente por seção, mesma família |
 | `/q.html` | Q — a planta: o Íz como edifício-galeria, a câmera caminha pelas letras |
+| `/r.html` | R — prensa: o grupo impresso em risografia, duas tintas por casa, retícula, registro e passada do rolo |
