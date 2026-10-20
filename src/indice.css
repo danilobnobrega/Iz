@@ -1,0 +1,247 @@
+/* ---------- proposta D: índice ---------- */
+
+.page-i .gl {
+  display: none;
+}
+
+/* abertura: as casas em tipografia que ocupa a tela */
+.s--idx {
+  height: 100vh;
+  height: 100svh;
+  padding: calc(var(--gutter) + 64px) 0 calc(var(--gutter) + 70px);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: var(--paper);
+}
+
+.idx__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--gutter) 10px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.idx__hint {
+  opacity: 0.55;
+}
+
+.idx {
+  --rows: 7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: var(--tpl, repeat(7, 1fr));
+  transition: grid-template-rows 0.8s var(--ease);
+}
+
+.idx__row {
+  position: relative;
+  border-bottom: 1px solid var(--line);
+}
+
+.idx__row.is-on {
+  z-index: 2;
+}
+
+.idx__link {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  align-items: center;
+  padding: 0 var(--gutter);
+}
+
+.idx__name {
+  --size: calc((100svh - 190px - var(--gutter) * 2) / 7 * 1.3);
+  font-family: var(--display);
+  font-stretch: 125%;
+  font-weight: 860;
+  font-size: var(--size);
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-block;
+  justify-self: start;
+  padding: 0.24em 0.04em 0.06em;
+  margin: -0.24em -0.04em -0.06em;
+  color: var(--ink);
+  background-image: var(--img);
+  background-size: 110vw auto;
+  background-position: var(--bx, 50%) var(--by, 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform-origin: 0% 55%;
+  transition: color 0.55s var(--ease), opacity 0.55s var(--ease), transform 0.8s var(--ease);
+  will-change: transform;
+}
+
+.idx__n {
+  transition: color 0.4s var(--ease);
+}
+
+.idx__meta {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.4s var(--ease), transform 0.6s var(--ease);
+}
+
+/* faixa da cor da casa que entra por baixo da linha */
+.idx__row::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--c);
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition: transform 0.6s var(--ease);
+  opacity: 0.12;
+}
+
+.idx.has-hover .idx__name {
+  opacity: 0.16;
+}
+
+.idx.has-hover .idx__name {
+  transform: scale(0.62);
+}
+
+.idx.has-hover .idx__row.is-on .idx__name {
+  opacity: 1;
+  color: transparent;
+  transform: scale(2.35);
+}
+
+.idx__row.is-on::before {
+  transform: scaleY(1);
+}
+
+.idx__row.is-on .idx__n {
+  color: var(--c);
+}
+
+.idx__row.is-on .idx__meta {
+  opacity: 1;
+  transform: none;
+}
+
+/* casa aberta */
+.idx-open {
+  position: fixed;
+  z-index: 60;
+  inset: 0;
+  visibility: hidden;
+  color: #fff;
+}
+
+.idx-open.is-open {
+  visibility: visible;
+}
+
+.idx-open__img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  clip-path: inset(50% 0 50% 0);
+}
+
+.idx-open__img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 50%);
+}
+
+.idx-open__ui {
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: calc(var(--gutter) + 80px);
+}
+
+.idx-open__name {
+  font-family: var(--display);
+  font-stretch: 125%;
+  font-weight: 860;
+  font-size: clamp(64px, 13vw, 240px);
+  line-height: 0.82;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  margin: 8px 0 12px;
+}
+
+.idx-open__n,
+.idx-open__meta {
+  margin: 0;
+}
+
+.idx-open__close {
+  position: absolute;
+  top: calc(var(--gutter) + 70px);
+  right: var(--gutter);
+  color: #fff;
+  --accent: #fff;
+}
+
+.idx-open__close:hover {
+  color: var(--ink);
+}
+
+/* folhas que se empilham */
+.sheet {
+  position: sticky;
+  top: var(--stick, 0px);
+  min-height: 100vh;
+  min-height: 100svh;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  box-shadow: 0 -18px 50px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.sheet > .wrap {
+  transform-origin: 50% 0%;
+  will-change: transform;
+}
+
+.sheet__shade {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.s--pensam.sheet {
+  background: #e3ded2;
+}
+
+.s--premios.sheet {
+  background: #f3f1ec;
+}
+
+.s--trabalhe.sheet {
+  background: #dfe4dc;
+}
+
+@media (max-width: 860px) {
+  .idx__link {
+    grid-template-columns: 34px 1fr;
+  }
+  .idx__meta {
+    display: none;
+  }
+  .idx__name {
+    font-size: min(var(--size), 15vw);
+  }
+  .idx__hint {
+    display: none;
+  }
+  .sheet {
+    position: relative;
+    top: 0;
+  }
+}

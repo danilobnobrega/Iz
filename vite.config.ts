@@ -1,0 +1,28 @@
+import { defineConfig } from 'vite'
+import glsl from 'vite-plugin-glsl'
+import { resolve } from 'path'
+
+export default defineConfig({
+  plugins: [glsl()],
+  server: { host: true },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        grade: resolve(__dirname, 'grade.html'),
+        horizontal: resolve(__dirname, 'horizontal.html'),
+        indice: resolve(__dirname, 'indice.html'),
+        fluido: resolve(__dirname, 'fluido.html'),
+        editorial: resolve(__dirname, 'editorial.html'),
+        papel: resolve(__dirname, 'papel.html'),
+        mosaico: resolve(__dirname, 'mosaico.html'),
+        gravidade: resolve(__dirname, 'gravidade.html'),
+        materia: resolve(__dirname, 'materia.html'),
+        toalha: resolve(__dirname, 'toalha.html'),
+        fenda: resolve(__dirname, 'fenda.html'),
+        m: resolve(__dirname, 'm.html'),
+        n: resolve(__dirname, 'n.html'),
+      },
+    },
+  },
+})

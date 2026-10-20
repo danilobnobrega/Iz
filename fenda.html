@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Grupo Íz — proposta L</title>
+    <style>
+      html { background: #ede7dc; }
+    </style>
+  </head>
+  <body class="nv is-loading">
+    <!-- carregamento: a fenda cresce com o progresso e vira a primeira imagem -->
+    <div class="nv-load" aria-hidden="true">
+      <span class="nv-load__line"></span>
+      <span class="nv-load__n">000</span>
+    </div>
+
+    <header class="nv-h">
+      <a class="nv-h__mark" href="#" data-top aria-label="Grupo Íz, início">Íz</a>
+      <a class="nv-btn" href="#casas" data-go data-magnet><span>Reservar</span></a>
+    </header>
+
+    <canvas class="nv-gl" aria-hidden="true"></canvas>
+    <div class="nv-cursor" aria-hidden="true"><span class="nv-cursor__dot"></span><span class="nv-cursor__label">Ver</span></div>
+
+    <main>
+      <!-- abertura e origem dividem o mesmo palco -->
+      <section class="nv-hero">
+        <div class="nv-stick">
+          <figure class="nv-hero__media" data-gl data-dim="0.86"><img src="/img/iz_unnamed.webp" alt="Salão do Íz" /></figure>
+          <div class="nv-hero__text">
+            <h1 class="nv-display" data-split>Alta gastronomia <em>com alma regional.</em></h1>
+            <p class="nv-small" data-fade>Grupo Íz · Goiânia · desde 2015</p>
+          </div>
+          <div class="nv-origem">
+            <p class="nv-k">01 · O grupo</p>
+            <p class="nv-lead" data-scrub>
+              Ian Baiocchi e Domingos Ávila se conheceram na academia de karatê da família<span class="nv-inl"><img src="/img/socios.webp" alt="" /></span>.
+              Ian cozinhou em São Paulo<span class="nv-inl"><img src="/img/ian_neo.webp" alt="" /></span> e na Espanha, no El Celler de Can Roca e no Mugaritz.
+              Voltou para Goiânia<span class="nv-inl"><img src="/img/gra2.webp" alt="" /></span> e, em 2016, Domingos virou sócio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="nv-quote">
+        <blockquote>
+          <p class="nv-display nv-display--i" data-split data-io>“O caminho mais fácil para um cozinheiro talvez fosse ficar em São Paulo.”</p>
+          <cite class="nv-small" data-fade data-io>Ian Baiocchi</cite>
+        </blockquote>
+      </section>
+
+      <section class="nv-princ">
+        <div class="nv-stick nv-princ__in">
+          <p class="nv-k nv-princ__k">02 · Como pensamos</p>
+          <div class="nv-princ__stack">
+            <div class="nv-step"><p class="nv-statement">Cuidado,<br /><em>não pompa.</em></p><p class="nv-note">Reunião com o salão todo dia antes de abrir.</p></div>
+            <div class="nv-step"><p class="nv-statement">A base é linguagem,<br /><em>não regra.</em></p><p class="nv-note">No nip, a Margherita é DOG: denominação de origem goiana.</p></div>
+            <div class="nv-step"><p class="nv-statement">Local,<br /><em>sem ser óbvio.</em></p><p class="nv-note">Baru, cajuzinho do cerrado, baunilha do cerrado, jabuticaba.</p></div>
+            <div class="nv-step"><p class="nv-statement">Nada de<br /><em>acomodação.</em></p><p class="nv-note">Padaria, açougue e confeitaria próprios.</p></div>
+          </div>
+          <div class="nv-princ__media">
+            <figure data-gl><img src="/img/gra1.webp" alt="" /></figure>
+            <figure data-gl><img src="/img/nip_pizza.webp" alt="" /></figure>
+            <figure data-gl><img src="/img/caviar.webp" alt="" /></figure>
+            <figure data-gl><img src="/img/iz_rest.webp" alt="" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="nv-casas" id="casas">
+        <div class="nv-stick nv-casas__in">
+          <p class="nv-k nv-casas__k">03 · Casas</p>
+          <div class="nv-casas__track">
+            <figure data-gl data-casa="0"><img src="/img/iz_unnamed.webp" alt="Íz" /></figure>
+            <figure data-gl data-casa="1"><img src="/img/t1929.webp" alt="1929 Trattoria" /></figure>
+            <figure data-gl data-casa="2"><img src="/img/gra2.webp" alt="Grá" /></figure>
+            <figure data-gl data-casa="3"><img src="/img/nip_pistache.webp" alt="Alata" /></figure>
+            <figure data-gl data-casa="4"><img src="/img/nip_polpetone.webp" alt="Fulles Kitchen" /></figure>
+            <figure data-gl data-casa="5"><img src="/img/iz_9.webp" alt="Íz Hotel Conceito" /></figure>
+            <figure data-gl data-casa="6"><img src="/img/nip_fachada.webp" alt="nip" /></figure>
+          </div>
+          <div class="nv-casas__names">
+            <div class="nv-name"><span class="nv-name__n">01</span><p class="nv-name__t">Íz</p><span class="nv-name__m">Contemporânea · desde 2015</span></div>
+            <div class="nv-name"><span class="nv-name__n">02</span><p class="nv-name__t">1929 <em>Trattoria</em></p><span class="nv-name__m">Italiana · o ano da avó, Dona Colombina</span></div>
+            <div class="nv-name"><span class="nv-name__n">03</span><p class="nv-name__t">Grá</p><span class="nv-name__m">Bistrô francês · 192 metros</span></div>
+            <div class="nv-name"><span class="nv-name__n">04</span><p class="nv-name__t">Alata</p><span class="nv-name__m">Sorvete artesanal</span></div>
+            <div class="nv-name"><span class="nv-name__n">05</span><p class="nv-name__t">Fulles <em>Kitchen</em></p><span class="nv-name__m">Cozinha na lenha</span></div>
+            <div class="nv-name"><span class="nv-name__n">06</span><p class="nv-name__t">Íz <em>Hotel</em></p><span class="nv-name__m">Restaurant with rooms</span></div>
+            <div class="nv-name"><span class="nv-name__n">07</span><p class="nv-name__t">nip</p><span class="nv-name__m">Not in Napoli · Rua 1130</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nv-bts">
+        <figure class="nv-bts__media" data-gl data-slits="9" data-dim="0.62"><img src="/img/ian_chef.webp" alt="Ian Baiocchi na cozinha" /></figure>
+        <div class="nv-bts__text">
+          <p class="nv-k nv-k--light" data-fade data-io>04 · Bastidores</p>
+          <div class="nv-nums">
+            <div><span class="nv-odo" data-odo="445">000</span><p class="nv-small">pessoas</p></div>
+            <div><span class="nv-odo" data-odo="50">00</span><p class="nv-small">mil clientes por mês</p></div>
+          </div>
+          <p class="nv-note nv-note--light" data-fade data-io>Padaria, açougue e confeitaria próprios abastecem as casas. O que chega à mesa começa muito antes da porta abrir.</p>
+        </div>
+      </section>
+
+      <section class="nv-press">
+        <p class="nv-k" data-fade data-io>05 · Imprensa</p>
+        <p class="nv-press__q" aria-live="polite"></p>
+        <p class="nv-small nv-press__s"></p>
+      </section>
+
+      <section class="nv-trab">
+        <p class="nv-k" data-fade data-io>06 · Trabalhe conosco</p>
+        <p class="nv-display" data-split data-io>445 hoje. <em>520 em 2026.</em></p>
+        <a class="nv-btn nv-btn--l" href="#" data-magnet><span>Quero trabalhar no Íz</span></a>
+      </section>
+    </main>
+
+    <footer class="nv-f">
+      <div class="nv-f__mark" aria-hidden="true">Íz</div>
+      <div class="nv-f__row">
+        <span>Rua 1130, Setor Marista · Goiânia</span>
+        <span>Proposta não oficial, por Danilo</span>
+      </div>
+      <div class="nv-f__loop" aria-hidden="true"><span class="nv-f__bar"></span><span class="nv-small">Continue rolando para voltar ao começo</span></div>
+    </footer>
+
+    <script type="module" src="/src/fenda.ts"></script>
+  </body>
+</html>

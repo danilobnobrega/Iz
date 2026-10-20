@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Grupo Íz — proposta E (tinta)</title>
+  </head>
+  <body class="is-loading page-ink on-dark">
+    <canvas class="gl" aria-hidden="true"></canvas>
+
+    <!-- moldura fixa -->
+    <header class="frame">
+      <a class="frame__mark" href="#hero" data-goto="#hero" aria-label="Grupo Íz, início">
+        <span class="frame__mark-iz">Íz</span><span class="frame__mark-sub">grupo</span>
+      </a>
+      <nav class="frame__nav" aria-label="Principal">
+        <a class="roll" href="#origem" data-goto="#origem"><span data-text="O grupo">O grupo</span></a>
+        <a class="roll" href="#casas" data-goto="#casas"><span data-text="Casas">Casas</span></a>
+        <a class="roll" href="#portras" data-goto="#portras"><span data-text="Bastidores">Bastidores</span></a>
+        <a class="roll" href="#trabalhe" data-goto="#trabalhe"><span data-text="Trabalhe conosco">Trabalhe conosco</span></a>
+        <a class="pill" href="#casas" data-goto="#casas"><span class="pill__fill"></span><span class="pill__label">Reservar</span></a>
+      </nav>
+    </header>
+
+    <aside class="ficha" aria-live="polite">
+      <div class="ficha__row"><span>Goiânia, GO</span><span class="ficha__clock">--:--:--</span></div>
+      <div class="ficha__row"><span class="ficha__index">000</span><span class="ficha__name" data-type>Carregando</span></div>
+    </aside>
+
+    <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__label"></span></div>
+
+    <div class="ritual" aria-hidden="true"><span class="ritual__name"></span></div>
+
+    <div class="ink__chapters" aria-live="polite"></div>
+    <nav class="ink__nav" aria-label="Capítulos"></nav>
+    <p class="ink__hint t-label">Passe o cursor sobre a imagem <span>·</span> role para continuar</p>
+    <main class="ink__scroll"></main>
+
+    <script type="module" src="/src/fluido.ts"></script>
+  </body>
+</html>
