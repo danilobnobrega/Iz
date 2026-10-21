@@ -52,7 +52,7 @@ export const BASE = 0.76
 
 export type WordAtlas = { texture: THREE.DataTexture; count: number; aspect: number }
 
-export function wordAtlas(words: string[], font: string, W = 640, H = 256, weight = 400): WordAtlas {
+export function wordAtlas(words: string[], font: string, W = 640, H = 256, weight: number | string = 400): WordAtlas {
   const N = words.length
   const out = new Uint16Array(W * H * N)
   // desenha em 4x e tira a média de cada bloco: cobertura com precisão de subpixel,
