@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #14100d; color: #efe7d8; }
+body { font-family: 'Fraunces Variable', Georgia, serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+.y-gl { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; z-index: 0; }
+.ab-h { position: fixed; top: 0; left: 0; right: 0; z-index: 5; display: flex; justify-content: space-between; padding: 26px 34px; font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.ab-h__p i { font-style: normal; color: #d9a46b; }
+.y-sec { position: relative; }
+.y-pin { position: sticky; top: 0; height: 100vh; overflow: hidden; z-index: 2; pointer-events: none; }
+.y-mask { display: block; overflow: hidden; }
+.y-in { display: block; transform: translate3d(0, 110%, 0); }
+.ab-hint { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); margin: 0; font-family: 'JetBrains Mono Variable', monospace; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #d9a46b; }
+.ab-foot { position: relative; z-index: 2; background: #14100d; padding: 16vh 34px 34px; }
+.ab-k { font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #d9a46b; }
+.ab-chan { list-style: none; padding: 0; margin: 0 0 6vh; display: flex; flex-wrap: wrap; gap: 10px 28px; font-weight: 300; font-size: clamp(22px, 2.4vw, 38px); }
+.ab-cta { display: inline-block; font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; border: 1px solid #d9a46b; padding: 12px 16px; margin-bottom: 8vh; }
+.ab-sign { font-family: 'JetBrains Mono Variable', monospace; font-size: 11px; opacity: .55; }
+@media (max-width: 760px) { .ab-h { padding: 18px 20px; } .ab-foot { padding: 12vh 20px 24px; } }
