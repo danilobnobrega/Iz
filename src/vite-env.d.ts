@@ -11,3 +11,4 @@ declare module '*.frag' {
   const src: string
   export default src
 }
+declare module 'opentype.js'

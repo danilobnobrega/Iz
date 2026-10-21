@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; color: #1a1611; }
+body { font-family: 'Instrument Serif', Georgia, serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+.x-gl { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; }
+
+.x-h {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 3; display: flex; justify-content: space-between;
+  padding: 28px 40px; font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .04em;
+}
+.x-h nav { display: flex; gap: 28px; }
+
+.x-caps { position: fixed; left: 40px; bottom: 40px; z-index: 3; width: min(460px, calc(100vw - 80px)); height: 140px; pointer-events: none; }
+.x-cap { position: absolute; left: 0; bottom: 0; }
+.x-cap.is-on { pointer-events: auto; }
+.x-k { font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 10px; }
+.x-t { font-size: clamp(24px, 2.2vw, 34px); line-height: 1.12; margin: 0; }
+.x-cap .x-ln { display: block; overflow: hidden; padding-bottom: .08em; margin-bottom: -.08em; }
+.x-cap .x-ln > span { display: block; will-change: transform; }
+.x-cta { display: inline-block; margin-top: 16px; font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 4px; }
+.x-sign { position: fixed; right: 40px; bottom: 40px; margin: 0; z-index: 3; font-family: 'JetBrains Mono Variable', monospace; font-size: 11px; opacity: .6; }
+
+@media (max-width: 760px) {
+  .x-h { padding: 18px 22px; }
+  .x-caps { left: 22px; bottom: 64px; width: calc(100vw - 44px); }
+  .x-sign { right: 22px; bottom: 22px; }
+}
