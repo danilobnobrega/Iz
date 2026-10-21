@@ -30,6 +30,7 @@ export default defineConfig({
         t: resolve(__dirname, 't.html'),
         u: resolve(__dirname, 'u.html'),
         v: resolve(__dirname, 'v.html'),
+        w: resolve(__dirname, 'w.html'),
       },
     },
   },
