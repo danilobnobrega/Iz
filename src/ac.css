@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #050506; color: #f2f0ec; }
+body { font-family: 'Inter Tight Variable', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+.y-gl { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; z-index: 0; }
+.ac-h { position: fixed; top: 0; left: 0; right: 0; z-index: 5; display: flex; justify-content: space-between; padding: 24px 34px; font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; mix-blend-mode: difference; color: #fff; }
+.y-sec { position: relative; }
+.y-pin { position: sticky; top: 0; height: 100vh; overflow: hidden; z-index: 2; pointer-events: none; }
+.y-pin a { pointer-events: auto; }
+.y-cap { position: absolute; max-width: min(520px, calc(100vw - 68px)); }
+.y-cap--bl { left: 34px; bottom: 34px; }
+.y-cap--tl { left: 34px; top: 88px; }
+.y-mask { display: block; overflow: hidden; padding-bottom: .1em; margin-bottom: -.1em; }
+.y-in { display: block; will-change: transform; transform: translate3d(0, 110%, 0); }
+.ac-on-light { color: #1a1416; }
+.ac-k { font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 12px; opacity: .8; }
+.ac-t { font-weight: 600; font-size: clamp(30px, 3.4vw, 58px); line-height: 1; letter-spacing: -.025em; margin: 0 0 14px; }
+.ac-s { font-weight: 400; font-size: clamp(16px, 1.2vw, 19px); line-height: 1.4; margin: 0; max-width: 30em; }
+.ac-count { font-variant-numeric: tabular-nums; }
+.ac-cta { display: inline-block; margin-top: 18px; font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; background: #1a1416; color: #f4ece9; padding: 12px 16px; }
+.ac-foot { position: relative; z-index: 2; background: #050506; padding: 16vh 34px 34px; }
+.ac-houses { font-weight: 600; font-size: clamp(28px, 3.6vw, 60px); letter-spacing: -.02em; line-height: 1.05; margin: 0 0 10vh; max-width: 16em; }
+.ac-chan { list-style: none; padding: 0; margin: 0 0 6vh; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 18px; }
+.ac-sign { font-family: 'JetBrains Mono Variable', monospace; font-size: 11px; opacity: .5; }
+@media (max-width: 760px) { .ac-h { padding: 18px 20px; } .y-cap--bl, .y-cap--tl { left: 20px; } .ac-foot { padding: 12vh 20px 24px; } }
