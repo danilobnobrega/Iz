@@ -30,3 +30,4 @@ npm run dev   # http://localhost:5190
 | `/s.html` | S — poeira: partículas na GPU formam a marca, as fotos em relevo e as frases |
 | `/t.html` | T — serviço: ritmo de cozinha, história em batidas, cortes de faca, marca que se corta no rodapé |
 | `/u.html` | U — foco: cada foto tem profundidade real (Depth Anything); o foco segue o olho como um autofoco, a câmera anda com o scroll, o texto só fica nítido na linha de leitura |
+| `/v.html` | V — um mundo só, todo em WebGL (inclusive o texto), aplicando o estudo da igloo.inc: a marca em pedra quebrada que reage peça por peça; as sete casas em blocos de vidro com fotos gravadas a laser por dentro (refração real, bafo no vidro); um poço em espiral feito do pó das gravações; o nome de cada casa em pó sobre um pedestal; rolagem própria em laço, som sintetizado |
