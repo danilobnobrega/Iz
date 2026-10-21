@@ -52,7 +52,7 @@ export const BASE = 0.76
 
 export type WordAtlas = { texture: THREE.DataTexture; count: number; aspect: number }
 
-export function wordAtlas(words: string[], font: string, W = 640, H = 256): WordAtlas {
+export function wordAtlas(words: string[], font: string, W = 640, H = 256, weight = 400): WordAtlas {
   const N = words.length
   const out = new Uint16Array(W * H * N)
   // desenha em 4x e tira a média de cada bloco: cobertura com precisão de subpixel,
@@ -71,10 +71,10 @@ export function wordAtlas(words: string[], font: string, W = 640, H = 256): Word
     x.textAlign = 'center'
     x.textBaseline = 'alphabetic'
     let size = H * 0.78
-    x.font = `${size}px ${font}`
+    x.font = `${weight} ${size}px ${font}`
     while (x.measureText(word).width > W * 0.86) {
       size -= 4
-      x.font = `${size}px ${font}`
+      x.font = `${weight} ${size}px ${font}`
     }
     // todas as palavras na mesma linha de base: assim elas pousam no mesmo piso
     x.fillText(word, W / 2, H * BASE)
