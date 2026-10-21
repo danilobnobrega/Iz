@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #0b0907; color: #f4ece0; }
+body { font-family: 'Inter Tight Variable', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+.y-gl { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; z-index: 0; }
+
+.ae-h { position: fixed; top: 0; left: 0; right: 0; z-index: 5; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 22px 34px; }
+.ae-h__mark { font-family: 'Instrument Serif', serif; font-size: 34px; line-height: 1; }
+.ae-clock { font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .14em; padding: 7px 12px; border: 1px solid rgba(244,236,224,.35); border-radius: 99px; backdrop-filter: blur(8px); background: rgba(10,8,7,.18); }
+.ae-clock i { font-style: normal; font-variant-numeric: tabular-nums; }
+.ae-h__cta { justify-self: end; font-size: 13px; font-weight: 500; padding: 9px 14px; border-radius: 99px; background: #f4ece0; color: #0b0907; transition: background .4s, color .4s; }
+.ae-h__cta:hover { background: #ff7a3d; color: #0b0907; }
+
+.y-sec { position: relative; }
+.y-pin { position: sticky; top: 0; height: 100vh; overflow: hidden; z-index: 2; pointer-events: none; }
+.y-pin a { pointer-events: auto; }
+.y-mask { display: block; overflow: hidden; padding-bottom: .12em; margin-bottom: -.12em; }
+.y-in { display: block; will-change: transform; transform: translate3d(0, 110%, 0); }
+
+.ae-hero { position: absolute; left: 0; right: 0; top: 17vh; text-align: center; padding: 0 24px; text-shadow: 0 2px 40px rgba(0,0,0,.25); }
+.ae-d { margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(56px, 8.6vw, 160px); line-height: .92; letter-spacing: -.02em; }
+.ae-d--i { font-style: italic; color: #ffd9b0; }
+.ae-hint { position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%); margin: 0; font-family: 'JetBrains Mono Variable', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; opacity: .8; }
+
+.ae-col { position: absolute; top: 50%; transform: translateY(-50%); max-width: min(460px, calc(100vw - 68px)); }
+.ae-col--l { left: 6vw; }
+.ae-col--r { right: 6vw; }
+.ae-col--low { top: auto; bottom: 8vh; transform: none; }
+.ae-k { font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 16px; color: #ffb27a; }
+.ae-t { font-family: 'Instrument Serif', serif; font-size: clamp(36px, 3.8vw, 66px); line-height: 1; margin: 0 0 14px; letter-spacing: -.01em; }
+.ae-t--i { font-style: italic; color: #ffd9b0; }
+.ae-track small { display: block; font-family: 'JetBrains Mono Variable', monospace; font-style: normal; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #ffb27a; margin-bottom: 8px; }
+.ae-s { font-size: 16px; line-height: 1.45; margin: 0; opacity: .82; }
+.ae-cta { display: inline-block; margin-top: 22px; font-weight: 500; font-size: 15px; padding: 14px 20px; border-radius: 99px; background: #ff7a3d; color: #0b0907; }
+
+.ae-foot { position: relative; z-index: 2; background: #0b0907; padding: 16vh 6vw 34px; }
+.ae-houses { list-style: none; padding: 0; margin: 0 0 12vh; }
+.ae-houses li { display: flex; align-items: baseline; justify-content: space-between; border-top: 1px solid rgba(244,236,224,.14); padding: 14px 0; }
+.ae-houses a { font-family: 'Instrument Serif', serif; font-size: clamp(36px, 5vw, 84px); line-height: 1; transition: color .4s, transform .6s cubic-bezier(.35,0,0,1); }
+.ae-houses li:hover a { color: #ffb27a; transform: translateX(18px); font-style: italic; }
+.ae-houses span { font-family: 'JetBrains Mono Variable', monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; opacity: .6; }
+.ae-chan { list-style: none; padding: 0; margin: 0 0 6vh; display: flex; flex-wrap: wrap; gap: 8px 26px; font-size: 18px; }
+.ae-sign { font-family: 'JetBrains Mono Variable', monospace; font-size: 11px; opacity: .5; }
+@media (max-width: 760px) {
+  .ae-h { padding: 16px 18px; }
+  .ae-col, .ae-col--l, .ae-col--r { left: 20px; right: 20px; top: auto; bottom: 7vh; transform: none; text-shadow: 0 1px 18px rgba(8, 5, 3, 0.55), 0 0 2px rgba(8, 5, 3, 0.35); }
+  .ae-hero { top: 14vh; }
+  .ae-foot { padding: 12vh 20px 24px; }
+}

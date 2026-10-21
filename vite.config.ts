@@ -38,6 +38,7 @@ export default defineConfig({
         ab: resolve(__dirname, 'ab.html'),
         ac: resolve(__dirname, 'ac.html'),
         ad: resolve(__dirname, 'ad.html'),
+        ae: resolve(__dirname, 'ae.html'),
       },
     },
   },
