@@ -6,7 +6,7 @@ import type { WordAtlas } from './wordSdf'
 // Luz de área macia que segue o cursor, sombra suave, oclusão de contato, translucidez nas partes
 // finas, glaze com reflexo. Entre duas palavras, o campo se mistura e o volume se refaz.
 
-const FRAG = /* glsl */ `
+export const PORCELANA_FRAG = /* glsl */ `
   precision highp float;
   uniform sampler2D tSdf;
   uniform float uCount, uAspect, uA, uB, uMix, uTime, uH, uDepth, uRound, uTexW, uCellH;
@@ -171,7 +171,8 @@ const FRAG = /* glsl */ `
         // translucidez: quanto mais fino o volume ali, mais luz atravessa
         float thick = clamp(-map(p - n * 0.07).x / 0.07, 0.0, 1.0);
         float trans = pow(clamp(dot(v, -L) + 0.4, 0.0, 1.0), 2.0) * (1.0 - thick);
-        vec3 diff = alb * (wrap * sh * 1.25 + 0.22 * oc);
+        float sky = 0.5 + 0.5 * gn.y;
+        vec3 diff = alb * (wrap * sh * 1.1 + (0.34 + 0.16 * sky) * oc);
         diff += vec3(1.0, 0.72, 0.5) * trans * 0.28 * alb;
         float ndh = max(dot(gn, hcol), 0.0);
         float spec = pow(ndh, 140.0) * 1.6 + pow(ndh, 18.0) * 0.08;
@@ -216,7 +217,7 @@ export class Porcelana {
     this.rt = new THREE.WebGLRenderTarget(2, 2, { type: THREE.HalfFloatType, minFilter: THREE.LinearFilter, magFilter: THREE.LinearFilter, depthBuffer: false })
     this.mat = new THREE.ShaderMaterial({
       vertexShader: `varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0., 1.); }`,
-      fragmentShader: FRAG,
+      fragmentShader: PORCELANA_FRAG,
       depthTest: false,
       uniforms: {
         tSdf: { value: null },

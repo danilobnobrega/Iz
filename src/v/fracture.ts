@@ -67,8 +67,8 @@ function ringCentroid(r: Ring) {
 
 export type Piece = { cx: number; cy: number; area: number; y01: number; x01: number; rand: number; poly: Polygon }
 
-export function fractureIz(width = 3, depth = 0.36, cells = 150, seed = 7) {
-  const { mp, height } = glyphPolygons(width)
+export function fractureIz(width = 3, depth = 0.36, cells = 150, seed = 7, input?: { mp: MultiPolygon; height: number }) {
+  const { mp, height } = input ?? glyphPolygons(width)
   const R = rng(seed)
   const x0 = -width / 2 - 0.05, x1 = width / 2 + 0.05
   const y0 = -height / 2 - 0.05, y1 = height / 2 + 0.05
