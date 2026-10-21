@@ -204,7 +204,7 @@ export class JourneySec extends Section {
     this.cam.updateProjectionMatrix()
     if (this.uniforms.uDpr) {
       this.uniforms.uDpr.value = dpr
-      this.uniforms.uSize.value = (h / 900) * 3.2
+      this.uniforms.uSize.value = (h / 900) * 7.5
     }
   }
 
